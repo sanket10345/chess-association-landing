@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>H.P. State Amateur Chess Championship 2026</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Barlow+Condensed:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#231F20}a:hover{color:#9A5B00}
+a[style*="background: #F7A81B; color: #231F20"]:hover{background:#E08A00!important;border-color:#E08A00!important}
+</style>
+</helmet>
+<div style="font-family: 'Outfit', system-ui, sans-serif; color: #231F20; background: #FFFFFF; overflow-x: clip">
+
+<!-- CHECKER STRIP -->
+<div aria-hidden="true" style="height: 12px; background: repeating-conic-gradient(#231F20 0 25%, #FFFFFF 0 50%) 0 0 / 24px 24px"></div>
+
+<!-- NAV -->
+<header style="background: #231F20; color: #FFFFFF; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #3A3536">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 12px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; color: #FFFFFF; text-decoration: none">
+<img src="./assets/1dcf1b102a906ecfdc83c715a4471adb.png" alt="Solan District Chess Association logo" style="width: 44px; height: 44px; object-fit: contain; background: #FFFFFF; border-radius: 8px; padding: 2px; box-sizing: border-box">
+<span style="font-weight: 600; font-size: 16px; line-height: 1.2">Solan District<br>Chess Association</span>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 20px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.1em; text-transform: uppercase">
+<a href="#schedule" style="color: #E8E4E0; text-decoration: none; padding: 12px 0">Schedule</a>
+<a href="#format" style="color: #E8E4E0; text-decoration: none; padding: 12px 0">Format</a>
+<a href="#entries" style="color: #E8E4E0; text-decoration: none; padding: 12px 0">Entries</a>
+<a href="#prizes" style="color: #E8E4E0; text-decoration: none; padding: 12px 0">Prizes</a>
+<a href="#venue" style="color: #E8E4E0; text-decoration: none; padding: 12px 0">Venue</a>
+<a href="#contacts" style="color: #E8E4E0; text-decoration: none; padding: 12px 0">Contacts</a>
+<a href="{{registerUrl}}" target="_blank" rel="noopener" style="background: #F7A81B; color: #231F20; text-decoration: none; padding: 10px 20px; border-radius: 999px; font-weight: 700; border: 2px solid #F7A81B">Register</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="background: #231F20; color: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 40px; box-sizing: border-box; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 20px">
+<p style="margin: 0; font-weight: 600; font-size: 18px">Solan District Chess Association</p>
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.4em; color: #CFC9C4">PRESENTS</p>
+<h1 style="margin: 4px 0 0; font-weight: 700; font-size: clamp(38px, 6.4vw, 84px); line-height: 1.02; letter-spacing: -0.01em; max-width: 1000px">H.P. State Amateur Chess Championship 2026</h1>
+<p style="margin: 0; font-size: clamp(20px, 2.4vw, 30px); font-weight: 400; color: #F1EDE9">Boys and Girls  |  14–15 Nov. 2026  |  Shoolini University, Solan</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 12px">
+<a href="{{registerUrl}}" target="_blank" rel="noopener" style="background: #F7A81B; color: #231F20; text-decoration: none; font-weight: 700; font-size: 18px; padding: 14px 30px; border-radius: 999px; min-height: 44px; box-sizing: border-box; border: 2px solid #F7A81B">Register now · ₹600</a>
+<a href="{{whatsappUrl}}" target="_blank" rel="noopener" style="background: #F7A81B; color: #231F20; text-decoration: none; font-weight: 600; font-size: 18px; padding: 14px 30px; border-radius: 999px; min-height: 44px; box-sizing: border-box; border: 2px solid #F7A81B">Join the WhatsApp group</a>
+</div>
+<p style="margin: 0; font-size: 15px; color: #CFC9C4">Last date for entries: 12 November · Report by 8:00 AM, Saturday 14 November</p>
+</div>
+<img src="./assets/ba016e6d6a8b6a2071b69dd8720ee273.jpg" alt="Isometric illustration of chess pieces standing on staircases of black and white squares" style="display: block; width: 100%; max-width: 1400px; margin: 0 auto; height: auto">
+</section>
+
+<!-- KEY FACTS -->
+<section aria-label="Key facts" style="background: #F4F2EF; border-bottom: 1px solid #E2DDD8">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 0">
+<div style="flex: 1 1 220px; padding: 8px 24px; border-left: 1px solid #D6D0CA; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Prize fund</p>
+<p style="margin: 4px 0 0; font-weight: 700; font-size: 36px">₹19,100</p>
+</div>
+<div style="flex: 1 1 220px; padding: 8px 24px; border-left: 1px solid #D6D0CA; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Format</p>
+<p style="margin: 4px 0 0; font-weight: 700; font-size: 36px">6-round Swiss</p>
+</div>
+<div style="flex: 1 1 220px; padding: 8px 24px; border-left: 1px solid #D6D0CA; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Time control</p>
+<p style="margin: 4px 0 0; font-weight: 700; font-size: 36px">45 min + 15 s</p>
+</div>
+<div style="flex: 1 1 220px; padding: 8px 24px; border-left: 1px solid #D6D0CA; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Top 2 qualify</p>
+<p style="margin: 4px 0 0; font-weight: 700; font-size: 36px">Nationals, Assam</p>
+</div>
+</div>
+</section>
+
+<!-- 01 SCHEDULE -->
+<section id="schedule" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 0; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C5757">01 · When</p>
+<h2 style="margin: 8px 0 40px; font-weight: 700; font-size: clamp(32px, 4vw, 52px); line-height: 1.05">Tournament schedule</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<sc-for list="{{days}}" as="day" hint-placeholder-count="2">
+<div style="flex: 1 1 360px; border: 1px solid #231F20; border-radius: 12px; overflow: hidden">
+<div style="background: #231F20; color: #FFFFFF; padding: 20px 28px; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.14em; color: #F7A81B">{{day.tag}}</span>
+<span style="font-weight: 600; font-size: 22px">{{day.date}}</span>
+</div>
+<div style="padding: 8px 28px 16px">
+<sc-for list="{{day.items}}" as="it" hint-placeholder-count="4">
+<div style="display: flex; gap: 24px; padding: 16px 0; border-bottom: 1px solid #E2DDD8; align-items: baseline">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 22px; width: 64px; flex-shrink: 0">{{it.t}}</span>
+<span style="font-size: 19px">{{it.e}}</span>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+<p style="margin: 20px 0 0; font-size: 16px; color: #5C5757">Players must report by 8:00 AM for an early start. Schedule is tentative and may vary with entries.</p>
+</section>
+
+<!-- 02 FORMAT -->
+<section id="format" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 0; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C5757">02 · How</p>
+<h2 style="margin: 8px 0 40px; font-weight: 700; font-size: clamp(32px, 4vw, 52px); line-height: 1.05">Format of play</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 240px; background: #F4F2EF; border-radius: 12px; padding: 28px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">System</p>
+<p style="margin: 8px 0 6px; font-weight: 700; font-size: 34px">Swiss</p>
+<p style="margin: 0; font-size: 16px; color: #5C5757">Played under the FIDE Laws of Chess</p>
+</div>
+<div style="flex: 1 1 240px; background: #F4F2EF; border-radius: 12px; padding: 28px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Rounds</p>
+<p style="margin: 8px 0 6px; font-weight: 700; font-size: 34px">Six</p>
+<p style="margin: 0; font-size: 16px; color: #5C5757">Over two days</p>
+</div>
+<div style="flex: 1 1 240px; background: #F4F2EF; border-radius: 12px; padding: 28px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Time control</p>
+<p style="margin: 8px 0 6px; font-weight: 700; font-size: 34px">45 min + 15 s</p>
+<p style="margin: 0; font-size: 16px; color: #5C5757">Standard chess</p>
+</div>
+<div style="flex: 1 1 240px; background: #F4F2EF; border-radius: 12px; padding: 28px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Default time</p>
+<p style="margin: 8px 0 6px; font-weight: 700; font-size: 34px">15 min</p>
+<p style="margin: 0; font-size: 16px; color: #5C5757">To arrive at the board</p>
+</div>
+</div>
+<p style="margin: 20px 0 0; font-size: 16px; color: #5C5757">The time format will be standard and will be decided by the Chief Arbiter.</p>
+
+<!-- 03 TIE-BREAKS + NATIONALS -->
+<div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 72px">
+<div style="flex: 999 1 520px; min-width: 0">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C5757">03 · Ranking</p>
+<h2 style="margin: 8px 0 28px; font-weight: 700; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.05">Tie-breaks, in order</h2>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 12px">
+<sc-for list="{{tiebreaks}}" as="tb" hint-placeholder-count="6">
+<li style="flex: 1 1 260px; display: flex; align-items: center; gap: 16px; border: 1px solid #D6D0CA; border-radius: 10px; padding: 14px 18px">
+<span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 6px; background: #231F20; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 20px">{{tb.k}}</span>
+<span style="font-size: 18px">{{tb.v}}</span>
+</li>
+</sc-for>
+</ol>
+</div>
+<div style="flex: 1 1 320px; background: #231F20; color: #FFFFFF; border-radius: 14px; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px; justify-content: center">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 0.14em; text-transform: uppercase; color: #F7A81B">Top 2 · National qualification</p>
+<p style="margin: 0; font-weight: 600; font-size: 26px; line-height: 1.25">The 1st and 2nd placed players get the chance to represent Himachal Pradesh at the National Amateur Championship, Assam.</p>
+<p style="margin: 0; font-size: 15px; color: #CFC9C4">Subject to the regulations of HPSCA and the national federation.</p>
+</div>
+</div>
+</section>
+
+<!-- 04 ENTRIES -->
+<section id="entries" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 0; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C5757">04 · Register</p>
+<h2 style="margin: 8px 0 40px; font-weight: 700; font-size: clamp(32px, 4vw, 52px); line-height: 1.05">Entries</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 240px; border: 2px solid #231F20; border-radius: 12px; padding: 28px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Entry fee</p>
+<p style="margin: 8px 0 6px; font-weight: 700; font-size: 48px; line-height: 1">₹600</p>
+<p style="margin: 0; font-size: 17px">General players</p>
+</div>
+<div style="flex: 1 1 240px; border: 2px solid #231F20; border-radius: 12px; padding: 28px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Entry fee</p>
+<p style="margin: 8px 0 6px; font-weight: 700; font-size: 48px; line-height: 1">₹500</p>
+<p style="margin: 0; font-size: 17px">Shoolini University students</p>
+</div>
+<div style="flex: 1 1 240px; background: #231F20; color: #FFFFFF; border-radius: 12px; padding: 28px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #F7A81B">Last date</p>
+<p style="margin: 8px 0 6px; font-weight: 700; font-size: 48px; line-height: 1">12 Nov</p>
+<p style="margin: 0; font-size: 17px; color: #E8E4E0">Late fee of ₹50 for entries after 12 Nov</p>
+</div>
+</div>
+<p style="margin: 20px 0 0; font-size: 17px; background: #F4F2EF; border-radius: 10px; padding: 16px 20px">Special discount on the entry fee for Government school students and players from economically weaker sections.</p>
+
+<div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 48px; align-items: flex-start">
+<div style="flex: 999 1 520px; min-width: 0">
+<h3 style="margin: 0 0 20px; font-weight: 600; font-size: 26px">How to register</h3>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0">
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="4">
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid #E2DDD8">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 22px; color: #9A5B00; width: 32px; flex-shrink: 0">{{s.n}}</span>
+<span style="font-size: 18px; line-height: 1.45">{{s.t}}</span>
+</li>
+</sc-for>
+</ol>
+</div>
+<div style="flex: 1 1 300px; border: 1px solid #D6D0CA; border-radius: 14px; padding: 32px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Player registration</p>
+<p style="margin: 0; font-weight: 600; font-size: 22px; line-height: 1.3">Opens the official registration form for the championship.</p>
+<a href="{{registerUrl}}" target="_blank" rel="noopener" style="background: #F7A81B; color: #231F20; text-decoration: none; font-weight: 700; font-size: 18px; padding: 14px 24px; border-radius: 999px; text-align: center; border: 2px solid #F7A81B">Open registration form</a>
+<a href="{{whatsappUrl}}" target="_blank" rel="noopener" style="background: #F7A81B; color: #231F20; text-decoration: none; font-weight: 600; font-size: 17px; padding: 13px 24px; border-radius: 999px; text-align: center; border: 2px solid #F7A81B">Join the WhatsApp group</a>
+</div>
+</div>
+</section>
+
+<!-- 05 ELIGIBILITY -->
+<section id="eligibility" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 0; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C5757">05 · Who</p>
+<h2 style="margin: 8px 0 32px; font-weight: 700; font-size: clamp(32px, 4vw, 52px); line-height: 1.05">Eligibility</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0; max-width: 900px">
+<li style="font-size: 19px; line-height: 1.45; padding: 16px 0; border-bottom: 1px solid #E2DDD8">Players must be from Himachal Pradesh, or be students currently studying in Himachal Pradesh.</li>
+<li style="font-size: 19px; line-height: 1.45; padding: 16px 0; border-bottom: 1px solid #E2DDD8">State and district player registration is compulsory for all players.</li>
+<li style="font-size: 19px; line-height: 1.45; padding: 16px 0; border-bottom: 1px solid #E2DDD8">HPSCA reserves the right to accept or reject any entry without assigning a reason.</li>
+</ul>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px">
+<div style="flex: 1 1 300px; background: #F4F2EF; border-radius: 12px; padding: 28px">
+<h3 style="margin: 0 0 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase">Protests &amp; appeals</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3D3839">Protests against the Chief Arbiter’s decision must be made in writing within 15 minutes, with a fee of ₹1,000, refunded if upheld. HPSCA forms a five-member appeals committee before the event.</p>
+</div>
+<div style="flex: 1 1 300px; background: #F4F2EF; border-radius: 12px; padding: 28px">
+<h3 style="margin: 0 0 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase">Withdrawal</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3D3839">A player absent from any round without informing the Chief Arbiter will be removed from all remaining rounds.</p>
+</div>
+<div style="flex: 1 1 300px; background: #F4F2EF; border-radius: 12px; padding: 28px">
+<h3 style="margin: 0 0 10px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.12em; text-transform: uppercase">Accommodation</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3D3839">Need help with accommodation? Get in touch with our team. Accommodation is paid for by the player.</p>
+</div>
+</div>
+</section>
+
+<!-- 06 PRIZES -->
+<section id="prizes" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 0; box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 40px">
+<div>
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C5757">06 · Rewards</p>
+<h2 style="margin: 8px 0 0; font-weight: 700; font-size: clamp(32px, 4vw, 52px); line-height: 1.05">Prizes</h2>
+</div>
+<div style="text-align: right">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #5C5757">Total prize fund</p>
+<p style="margin: 4px 0 0; font-weight: 700; font-size: clamp(36px, 4.4vw, 56px); line-height: 1">₹19,100</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 0; border-bottom: 6px solid #231F20">
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; align-items: center; text-align: center">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 0.16em; color: #5C5757">SECOND</p>
+<p style="margin: 4px 0 2px; font-weight: 700; font-size: 44px">₹4,000</p>
+<p style="margin: 0 0 10px; font-size: 16px; color: #5C5757">Cash + memento</p>
+<p style="margin: 0 0 16px; background: #231F20; color: #FFFFFF; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.1em; padding: 6px 10px; border-radius: 4px">NATIONALS · REPRESENTS H.P.</p>
+<div style="align-self: stretch; height: 140px; background: #6E7880; color: #FFFFFF; border-radius: 10px 10px 0 0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 72px">2</div>
+</div>
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; align-items: center; text-align: center">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 0.16em; color: #9A5B00">CHAMPION</p>
+<p style="margin: 4px 0 2px; font-weight: 700; font-size: 56px">₹5,000</p>
+<p style="margin: 0 0 10px; font-size: 16px; color: #5C5757">Cash + memento</p>
+<p style="margin: 0 0 16px; background: #231F20; color: #FFFFFF; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.1em; padding: 6px 10px; border-radius: 4px">NATIONALS · REPRESENTS H.P.</p>
+<div style="align-self: stretch; height: 200px; background: #F7A81B; color: #231F20; border-radius: 10px 10px 0 0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 96px">1</div>
+</div>
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; align-items: center; text-align: center">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 0.16em; color: #8C4E22">THIRD</p>
+<p style="margin: 4px 0 2px; font-weight: 700; font-size: 44px">₹3,000</p>
+<p style="margin: 0 0 16px; font-size: 16px; color: #5C5757">Cash + memento</p>
+<div style="align-self: stretch; height: 100px; background: #96552A; color: #FFFFFF; border-radius: 10px 10px 0 0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 64px">3</div>
+</div>
+</div>
+
+<div style="margin-top: 32px; overflow-x: auto">
+<table style="width: 100%; min-width: 420px; border-collapse: collapse; font-size: 18px">
+<thead>
+<tr style="border-bottom: 2px solid #231F20">
+<th scope="col" style="text-align: left; padding: 12px 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase">Rank</th>
+<th scope="col" style="text-align: left; padding: 12px 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase">Award</th>
+<th scope="col" style="text-align: right; padding: 12px 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase">Cash prize</th>
+</tr>
+</thead>
+<tbody>
+<sc-for list="{{prizes}}" as="p" hint-placeholder-count="7">
+<tr style="border-bottom: 1px solid #E2DDD8">
+<td style="padding: 14px 8px; font-weight: 600">{{p.r}}</td>
+<td style="padding: 14px 8px">Cash + medal</td>
+<td style="padding: 14px 8px; text-align: right; font-weight: 600">{{p.a}}</td>
+</tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+<p style="margin: 20px 0 0; font-size: 16px; color: #5C5757">Ranks 1–3 receive a cash prize and memento; ranks 4–10 a cash prize and medal. Prizes are awarded at the closing ceremony on Sunday, 15 November. Ties are decided by the tie-break order above.</p>
+</section>
+
+<!-- 07 VENUE -->
+<section id="venue" style="margin-top: 96px">
+<div style="position: relative; background: #231F20; min-height: 480px; display: flex; align-items: flex-end; overflow: hidden">
+<img src="./assets/2de6fcacaab3242b8709bebbfb2dc6a7.jpg" alt="Aerial view of Shoolini University buildings on a pine-forested hillside" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(35,31,32,0) 30%, rgba(35,31,32,0.85) 100%)"></div>
+<div style="position: relative; max-width: 1200px; width: 100%; margin: 0 auto; padding: 48px 24px; box-sizing: border-box; color: #FFFFFF">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #F1EDE9">07 · The venue</p>
+<h2 style="margin: 8px 0 0; font-weight: 700; font-size: clamp(40px, 6vw, 80px); line-height: 1">A game among the pines</h2>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 0; box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 24px 48px">
+<h3 style="flex: 1 1 260px; margin: 0; font-weight: 700; font-size: 28px; line-height: 1.15; text-transform: uppercase">Shoolini University, Solan</h3>
+<div style="flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 19px; line-height: 1.6">The campus climbs a pine-clad hillside above Solan, with forested ridges rolling away on every side and the valley opening out below. Walkways wind between the trees, the air is cool and clean, and the quiet of the hills settles over everything.</p>
+<p style="margin: 0; font-size: 19px; line-height: 1.6">It is a calm, unhurried place to think, and to step outside between rounds. Enjoy playing the game of chess in this scenic location.</p>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px">
+<img src="./assets/e6bacde86ba6803becd15d478ae02c08.jpg" alt="Shoolini University campus buildings and sports court among the trees" style="flex: 1 1 300px; min-width: 0; height: 240px; object-fit: cover; border-radius: 12px">
+<img src="./assets/54be009fdd1f3720c9d9992692aa3172.jpg" alt="White multi-storey Shoolini University building against the hills" style="flex: 1 1 300px; min-width: 0; height: 240px; object-fit: cover; border-radius: 12px">
+<img src="./assets/27857ee401d7542a638b587a68d99630.jpg" alt="Shoolini University building with a courtyard and mountains behind" style="flex: 1 1 300px; min-width: 0; height: 240px; object-fit: cover; border-radius: 12px">
+</div>
+<div style="display: flex; flex-wrap: wrap; margin-top: 40px; border-top: 3px solid #231F20; border-bottom: 1px solid #D6D0CA">
+<div style="flex: 1 1 220px; padding: 24px 24px 24px 0; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Meals</p>
+<p style="margin: 6px 0 4px; font-weight: 600; font-size: 22px">Available on campus</p>
+<p style="margin: 0; font-size: 15px; color: #5C5757">Paid for by the player</p>
+</div>
+<div style="flex: 1 1 220px; padding: 24px 24px 24px 0; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Parking</p>
+<p style="margin: 6px 0 4px; font-weight: 600; font-size: 22px">Available on campus</p>
+<p style="margin: 0; font-size: 15px; color: #5C5757">and in surrounding areas</p>
+</div>
+<div style="flex: 2 1 380px; padding: 24px 0; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Accommodation</p>
+<p style="margin: 6px 0 0; font-size: 17px; line-height: 1.5">Need help finding a place to stay? Get in touch with our team and we will assist you. Accommodation is paid for by the player.</p>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; padding: 20px 0">
+<p style="margin: 0; font-size: 17px">Village Bajhol, PO Sultanpur, Solan, H.P. 173212</p>
+<p style="margin: 0; font-size: 17px; color: #5C5757">About 1 hr from Shimla · 1.5 hrs from Chandigarh</p>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Shoolini+University+Bajhol+Solan" target="_blank" rel="noopener" style="font-weight: 600; font-size: 17px; padding: 12px 0">Open in Google Maps →</a>
+</div>
+</div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" style="background: #231F20; color: #FFFFFF; margin-top: 96px">
+<div style="max-width: 1200px; margin: 0 auto; padding: 80px 24px; box-sizing: border-box">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.14em; text-transform: uppercase; color: #CFC9C4">Get in touch</p>
+<h2 style="margin: 8px 0 40px; font-weight: 700; font-size: clamp(32px, 4vw, 52px); line-height: 1.05">Tournament contacts</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<sc-for list="{{contacts}}" as="c" hint-placeholder-count="7">
+<a href="{{c.tel}}" style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; border: 1px solid #4A4446; border-radius: 12px; padding: 22px 24px; color: #FFFFFF; text-decoration: none">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #F7A81B">{{c.role}}</span>
+<span style="font-weight: 600; font-size: 20px">{{c.name}}</span>
+<span style="font-size: 18px; color: #E8E4E0">{{c.phone}}</span>
+</a>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 32px; margin-top: 32px; align-items: center; font-size: 18px">
+<a href="mailto:solandistrictchess@gmail.com" style="color: #FFFFFF; font-weight: 600; padding: 12px 0">solandistrictchess@gmail.com</a>
+<span style="color: #CFC9C4">Venue: Shoolini University, Bajhol, Solan · Report by 8:00 AM, Sat 14 Nov</span>
+</div>
+</div>
+</section>
+
+<!-- PARTNERS / FOOTER -->
+<footer style="background: #FFFFFF">
+<div style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 40px; text-align: center">
+<div style="flex: 1 1 220px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.12em">ORGANISED BY</p>
+<img src="./assets/1dcf1b102a906ecfdc83c715a4471adb.png" alt="Solan District Chess Association logo" style="height: 110px; width: auto">
+<p style="margin: 0; font-weight: 600; font-size: 16px">Solan District Chess Association</p>
+</div>
+<div style="flex: 1 1 220px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.12em">UNDER THE AEGIS OF</p>
+<img src="./assets/a9c82399c65ba700c36b8681dd762335.png" alt="HPSCA logo" style="height: 110px; width: auto">
+<p style="margin: 0; font-weight: 600; font-size: 16px">Himachal Pradesh State Chess Association</p>
+</div>
+<div style="flex: 1 1 220px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+<p style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 0.12em">EVENT HOST PARTNER</p>
+<div style="height: 110px; display: flex; align-items: center">
+<img src="./assets/c3393795f50905624c227be9a39ed235.png" alt="Shoolini University logo" style="height: 80px; width: auto">
+</div>
+<p style="margin: 0; font-weight: 600; font-size: 16px">Shoolini University</p>
+</div>
+</div>
+<div style="border-top: 1px solid #E2DDD8">
+<p style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; box-sizing: border-box; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5C5757">Solan District Chess Association · Under the aegis of HPSCA</p>
+</div>
+<div aria-hidden="true" style="height: 12px; background: repeating-conic-gradient(#231F20 0 25%, #FFFFFF 0 50%) 0 0 / 24px 24px"></div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"registerUrl":{"editor":"text","default":"https://docs.google.com/forms/d/e/1FAIpQLScgUFG5ZZF0s5-0hYSHsN6RCNXEMSOoXIvSygio9aS5qfOY6Q/viewform","section":"Links"},"whatsappUrl":{"editor":"text","default":"https://chat.whatsapp.com/LazrIrmyIH3IDnoXhAHKYU?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4","section":"Links"},"$preview":{"width":1440,"height":6600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      registerUrl: this.props.registerUrl || 'https://docs.google.com/forms/d/e/1FAIpQLScgUFG5ZZF0s5-0hYSHsN6RCNXEMSOoXIvSygio9aS5qfOY6Q/viewform',
+      whatsappUrl: this.props.whatsappUrl || "https://chat.whatsapp.com/LazrIrmyIH3IDnoXhAHKYU?s=cl&p=a&mlu=4&ilr=4",
+      days: [
+        { tag: 'DAY 1', date: 'Saturday, 14 November', items: [
+          { t: '08:00', e: 'Reporting & registration' },
+          { t: '09:30', e: 'Inauguration & technical meeting' },
+          { t: '11:00', e: 'Round 1' },
+          { t: '13:30', e: 'Round 2' },
+          { t: '16:30', e: 'Round 3' }
+        ]},
+        { tag: 'DAY 2', date: 'Sunday, 15 November', items: [
+          { t: '09:00', e: 'Round 4' },
+          { t: '11:30', e: 'Round 5' },
+          { t: '14:30', e: 'Round 6' },
+          { t: '17:00', e: 'Prize distribution & closing' }
+        ]}
+      ],
+      tiebreaks: [
+        { k: 'A', v: 'Buchholz Cut 1' },
+        { k: 'B', v: 'Buchholz' },
+        { k: 'C', v: 'Sonneborn-Berger' },
+        { k: 'D', v: 'Direct encounter' },
+        { k: 'E', v: 'Most wins (forfeits included)' },
+        { k: 'F', v: 'Most games played with Black' }
+      ],
+      steps: [
+        { n: '01', t: 'All entries must come through the player’s District Chess Association.' },
+        { n: '02', t: 'Registration through the Google Form is mandatory.' },
+        { n: '03', t: 'Once the payment is done, attach the payment screenshot in the registration form.' },
+        { n: '04', t: 'Join the WhatsApp group to stay updated about the event.' }
+      ],
+      prizes: [
+        { r: '4th', a: '₹2,000' }, { r: '5th', a: '₹1,500' }, { r: '6th', a: '₹1,000' },
+        { r: '7th', a: '₹800' }, { r: '8th', a: '₹700' }, { r: '9th', a: '₹600' }, { r: '10th', a: '₹500' }
+      ],
+      contacts: [
+        { role: 'President', name: 'Adv. G.S. Chandel', phone: '94181 27579', tel: 'tel:+919418127579' },
+        { role: 'Vice President', name: 'Amit Sharma', phone: '92185 59459', tel: 'tel:+919218559459' },
+        { role: 'General Secretary', name: 'Bhartendu Sharma', phone: '99306 87849', tel: 'tel:+919930687849' },
+        { role: 'Treasurer / Arbiter', name: 'Er. Sanket Sharma', phone: '86798 45012', tel: 'tel:+918679845012' },
+        { role: 'Chief Arbiter', name: 'Er. Yogesh Joshi', phone: '78073 49740', tel: 'tel:+917807349740' },
+        { role: 'Arbiter', name: 'Namrata Sharma', phone: '98169 09270', tel: 'tel:+919816909270' },
+        { role: 'Senior Member', name: 'Himanshu Sharma', phone: '98170 67947', tel: 'tel:+919817067947' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
